@@ -5,19 +5,13 @@ void buff_print(char buff[], int *buff_i);
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
-<<<<<<< HEAD
- * _printf - the dub of printf
- * @format: the placeholder.
- * Return: the counter of chars
-=======
- *_printf - a dub of printf func
- *@format: the placeholder of argument
- *Return: the number of arg printed
->>>>>>> 1a10c6f80352eae36d30c5fb8b586117bc14d33a
+ * _print - Print function
+ * @format: format.
+ * Return: Printed chars.
  */
+
 int _printf(const char *format, ...)
 {
-<<<<<<< HEAD
 	int index, prtd = 0, counter = 0;
 	int flg, wd, per, s, buff_i = 0;
 	va_list list;
@@ -58,7 +52,7 @@ int _printf(const char *format, ...)
 	va_end(list);
 
 	return (counter);
-=======
+
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list args;
@@ -109,7 +103,7 @@ void print_buffer(char buffer[], int *buff_ind)
 	if (*buff_ind > 0)
 		write(1, &buffer[0], *buff_ind);
 	*buff_ind;
->>>>>>> 1a10c6f80352eae36d30c5fb8b586117bc14d33a
+	1a10c6f80352eae36d30c5fb8b586117bc14d33a
 }
 
 /**
