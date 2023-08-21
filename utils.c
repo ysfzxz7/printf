@@ -23,7 +23,7 @@ int digit(char chaar)
 
 int printable(char chaar)
 {
-	if(chaar >= 32 && chaar < 127)
+	if (chaar >= 32 && chaar < 127)
 	{
 		return (1);
 	}
@@ -58,7 +58,7 @@ long int converter_S_n(long int n, int s)
 		return ((short)n);
 	else if (s == S_L)
 		return (n);
-	
+
 	return ((int)n);
 }
 

@@ -14,7 +14,7 @@
  */
 int _write_char(char c, char buff[],
 	int flg, int wd, int per, int s)
-{ 
+{
 	int index = 0;
 	char pad = ' ';
 
@@ -47,6 +47,13 @@ int _write_char(char c, char buff[],
 
 /**
  * write_nbr - Prints a string
+ * @is_neg: negative
+ * @index: index
+ * @buff: buffer
+ * flg: flags
+ * @wd: wd
+ * @per: percentage
+ * @s: string
  * @is_negative: Lista of arguments
  * @ind: char types.
  * @buffer: Buffer array to handle print
@@ -60,7 +67,7 @@ int _write_char(char c, char buff[],
 int write_number(int is_neg, int index, char buff[],
 	int flg, int wd, int per, int s)
 {
-	int len = BUFFER_SIZE- index - 1;
+	int len = BUFFER_SIZE - index - 1;
 	char pad = ' ', m_char = 0;
 
 	CLEAR(s);
@@ -152,7 +159,6 @@ int unsigned_printer(int is_neg, int i,
 	char buff[],
 	int flg, int wd, int per, int s)
 {
-	
 	int len = BUFFER_SIZE - i - 1, index = 0;
 	char pad = ' ';
 
