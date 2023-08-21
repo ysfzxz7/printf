@@ -14,12 +14,12 @@ int _printf(const char *format, ...)
 	va_list list;
 	char buff[BUFFER_SIZE];
 
-	if (format == NULL)
+	if (!format)
 		return (-1);
 
 	va_start(list, format);
 
-	for (index = 0; format && format[index] != '\0'; index++)
+	for (index = 0; format && format[index] != '0' ; index++)
 	{
 		if (format[index] != '%')
 		{
