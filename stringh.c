@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+ *char_print - a func that print a string
+ *@args: the arg given in the format
+ *@buff: the buffer array for handling the print
+ *@flg: available falg
+ *@wd: the width
+ *@per: pres (mainly for float)
+ *@s: the size given
+ *Return: nbr of char printed
+ */
+int char_print(va_list args, char buff[], int flg, int wd, int per, int s)
+{
+	char chaar = va_arg(args, int);
+
+	return (_write_char(chaar, buff, flg, wd, per, s));
+}
+
+/**
  *str_print - a func that print a string
  *@args: the arg given in the format
  *@buff: the buffer array for handling the print
