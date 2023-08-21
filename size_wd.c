@@ -26,8 +26,8 @@ int size(const char *placeholder, int *index)
 }
 
 /**
- * wd - Calculat the wd
- * @placeholer: the string containg the args
+ * _wd - Calculat the wd
+ * @placeholder: the string containg the args
  * @index: index of args
  * @args: list of args
  *

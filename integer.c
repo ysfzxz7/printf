@@ -2,15 +2,16 @@
 
 /**
  * print_id - print decimal numbers
- * @num: integer to print
- * Return; the number of characters printed
+ * @a: integer to print
+ * Return: the number of characters printed
  */
 int print_id(int a)
 {
 	int len = 0;
+
 	if (a == -2147483648)
 	{
-		return (print_string(("-2147483648"));
+		return (print_string("-2147483648"));
 				}
 				if (a == 0)
 				{
@@ -29,5 +30,6 @@ int print_id(int a)
 				}
 				_putchar((a % 10) + '0');
 				len++;
+
 				return (len);
 }

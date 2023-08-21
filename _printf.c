@@ -5,7 +5,7 @@ void buff_print(char buff[], int *buff_i);
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _print - Print function
+ * _printf - Print function
  * @format: format.
  * Return: Printed chars.
  */

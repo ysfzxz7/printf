@@ -7,7 +7,7 @@
  *digit - this func check if a given char is a digit
  *@chaar: the char  given
  *
- *Return 0 otherwise 1
+ *Return: 0 otherwise 1
  */
 int digit(char chaar)
 {
@@ -47,7 +47,7 @@ long int converter_S_u(unsigned long int n, int s)
 }
 
 /**
- *converter_S_n: convert a size into number
+ *converter_S_n - convert a size into number
  *@n: the number
  *@s: the size
  *Return: the long int number
@@ -63,7 +63,7 @@ long int converter_S_n(long int n, int s)
 }
 
 /**
- *add_hex - this func add hex the output of hexa func
+ *add_hexa - this func add hex the output of hexa func
  *@aski: the aski given
  *@i: the intger
  *@buff: the array givne

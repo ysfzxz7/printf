@@ -50,17 +50,17 @@ int _write_char(char c, char buff[],
  * @is_neg: negative
  * @index: index
  * @buff: buffer
- * flg: flags
+ * @flg: flags
  * @wd: wd
  * @per: percentage
  * @s: string
- * @is_negative: Lista of arguments
- * @ind: char types.
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width.
- * @precision: precision specifier
- * @size: Size specifier
+ * @is_neg: Lista of arguments
+ * @index: char types.
+ * @buff: Buffer array to handle print
+ * @flg:  Calculates active flags
+ * @wd: get width.
+ * @per: precision specifier
+ * @s: Size specifier
  *
  * Return: Number of chars printed.
  */
@@ -85,15 +85,15 @@ int write_number(int is_neg, int index, char buff[],
 		len, pad, m_char));
 }
 /**
- * print_number - used to print numbers
- * @i: the index
- * @buff: the buffer
- * @flg: flags
+ * write_number - used to print numbers
+ * @ind: the index
+ * @buffer: the buffer
+ * @flags: flags
  * @width: the width given
- * @per: percsi
- * @len: The lenght of the number
+ * @prec: percsi
+ * @length: The lenght of the number
  * @padd: the padding of the char
- * @m_chars: some other chars
+ * @extra_c: some other chars
  *
  * Return: return how many char printed
  */
@@ -206,7 +206,7 @@ int unsigned_printer(int is_neg, int i,
  * @i: index to start printing
  * @len: the len
  * @wd: wd of the speci
- * @flags: flags
+ * @flg: flags
  * @pad: is the any spaces needed
  * @m_char: more chars
  * @pad_s: start spaces
