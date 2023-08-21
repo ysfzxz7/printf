@@ -14,10 +14,10 @@ int ptr_print(va_list args, char buff[],
 	int flg, int wd, int per, int s)
 {
 	char m_char = 0, pad = ' ';
-	int index = BUFFER_SIZE - 2, len = 2, pad_s = 1; 
+	int index = BUFFER_SIZE - 2, len = 2, pad_s = 1;
 	unsigned long n_ad;
 	char map_to[] = "0123456789abcdef";
-	void *addr= va_arg(args, void *);
+	void *addr = va_arg(args, void *);
 
 	CLEAR(wd);
 	CLEAR(s);
@@ -120,6 +120,7 @@ int rev_print(va_list args, char buff[],
 
 		string = ")Null(";
 	}
+
 	for (index = 0; string[index]; index++);
 
 	for (index = index - 1; index >= 0; index--)
@@ -169,7 +170,7 @@ int rot_print(va_list args, char buff[],
 		{
 			if (input[j] == string[index])
 			{
-				k= out[j];
+				k = out[j];
 				write(1, &k, 1);
 				counter++;
 				break;
