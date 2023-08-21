@@ -1,15 +1,14 @@
 #include "main.h"
 
-
 /**
  * un_print - print some unsigned number
  * @args: the args
  * @buff: Buff arr that contain the args
  * @flags: how mant active flag
- * @wd: the withd 
- * @per: per 
+ * @wd: the withd
+ * @per: per
  * @s: the siz of the per
- * Return: the counter of printed char 
+ * Return: the counter of printed char
  */
 int u_print(va_list args, char buff[],
 	int flg, int wd, int per, int s)
@@ -39,10 +38,10 @@ int u_print(va_list args, char buff[],
  * @args: the args
  * @buff: Buff arr that contain the args
  * @flags: how mant active flag
- * @wd: the withd 
- * @per: per 
+ * @wd: the withd
+ * @per: per
  * @s: the siz of the per
- * Return: the counter of printed char 
+ * Return: the counter of printed char
  */
 
 
@@ -82,12 +81,11 @@ int oc_print(va_list args, char buff[],
  * @args: the args
  * @buff: Buff arr that contain the args
  * @flags: how mant active flag
- * @wd: the withd 
- * @per: per 
+ * @wd: the withd
+ * @per: per
  * @s: the siz of the per
- * Return: the counter of printed char 
+ * Return: the counter of printed char
  */
-
 
 int hex_print(va_list args, char buff[],
 	int flg, int wd, int per, int s)
@@ -101,12 +99,11 @@ int hex_print(va_list args, char buff[],
  * @args: the args
  * @buff: Buff arr that contain the args
  * @flags: how mant active flag
- * @wd: the withd 
- * @per: per 
+ * @wd: the withd
+ * @per: per
  * @s: the siz of the per
- * Return: the counter of printed char 
+ * Return: the counter of printed char
  */
-
 
 int hEX_print(va_list args, char buff[],
 	int flg, int wd, int per, int s)
@@ -120,12 +117,11 @@ int hEX_print(va_list args, char buff[],
  * @args: the args
  * @buff: Buff arr that contain the args
  * @flags: how mant active flag
- * @wd: the withd 
- * @per: per 
+ * @wd: the withd
+ * @per: per
  * @s: the siz of the per
- * Return: the counter of printed char 
+ * Return: the counter of printed char
  */
-
 
 int hexa_print(va_list args, char map_to[], char buff[],
 	int flg, char flg_c, int wd, int per, int s)
