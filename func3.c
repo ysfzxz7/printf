@@ -121,8 +121,8 @@ int rev_print(va_list args, char buff[],
 		string = ")Null(";
 	}
 
-	for (index = 0; string[index]; index++);
-
+	for (index = 0; string[index]; index++)
+		;
 	for (index = index - 1; index >= 0; index--)
 	{
 		char k = string[index];

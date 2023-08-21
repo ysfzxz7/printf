@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * un_print - print some unsigned number
+ * u_print - print some unsigned number
  * @args: the args
  * @buff: Buff arr that contain the args
- * @flags: how mant active flag
+ * @flg: how mant active flag
  * @wd: the withd
  * @per: per
  * @s: the siz of the per
@@ -34,10 +34,10 @@ int u_print(va_list args, char buff[],
 	return (unsigned_printer(0, index, buff, flg, wd, per, s));
 }
 /**
- * un_print - print some unsigned number
+ * oc_print - print some unsigned number
  * @args: the args
  * @buff: Buff arr that contain the args
- * @flags: how mant active flag
+ * @flg: how mant active flag
  * @wd: the withd
  * @per: per
  * @s: the siz of the per
@@ -77,10 +77,10 @@ int oc_print(va_list args, char buff[],
 }
 
 /**
- * hexa_print - print some unsigned number
+ * hex_print - print some unsigned number
  * @args: the args
  * @buff: Buff arr that contain the args
- * @flags: how mant active flag
+ * @flg: how mant active flag
  * @wd: the withd
  * @per: per
  * @s: the siz of the per
@@ -95,10 +95,10 @@ int hex_print(va_list args, char buff[],
 }
 
 /**
- * un_print - print some unsigned number
+ * hEX_print - print some unsigned number
  * @args: the args
  * @buff: Buff arr that contain the args
- * @flags: how mant active flag
+ * @flg: how mant active flag
  * @wd: the withd
  * @per: per
  * @s: the siz of the per
@@ -113,10 +113,12 @@ int hEX_print(va_list args, char buff[],
 }
 
 /**
- * un_print - print some unsigned number
+ * hexa_print - print some unsigned number
  * @args: the args
+ * @map_to: map to
  * @buff: Buff arr that contain the args
- * @flags: how mant active flag
+ * @flg: how mant active flag
+ * @flg_c: the fla c
  * @wd: the withd
  * @per: per
  * @s: the siz of the per

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * h_print - chose the func accodint to the type of it
- * @formt: the foramt.
+ * @fomt: the foramt.
  * @ls: list of args
  * @i: i
  * @buff: buff array
@@ -22,7 +22,7 @@ int h_print(const char *fomt, int *i, va_list ls, char buff[],
 	{'X', hEX_print}, {'p', ptr_print}, {'S', un_print},
 	{'r', rev_print}, {'R', rot_print}, {'\0', NULL}
 };
-	
+
 	for (index = 0; fmt_types[index].fomt != '\0'; index++)
 		if (fomt[*i] == fmt_types[index].fomt)
 			return (fmt_types[index].func(ls, buff, flg, wd, per, s));

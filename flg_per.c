@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdarg.h>
 /**
- * flg - how many active flag
- * @palceholder: the placeholder containg the args
+ * flags - how many active flag
+ * @placeholder: the placeholder containg the args
  * @index: a single parm
  * Return: flg
  */
@@ -32,10 +32,10 @@ int flags(const char *placeholder, int *index)
 }
 
 /**
- * per - calcul some per
- * @placeholder: the string containg the string
+ * pers - calcul some per
+ * @format: the string containg the string
  * @index: list of args
- * @args: variadic args.
+ * @list: variadic args.
  *
  * Return: Per
  */
