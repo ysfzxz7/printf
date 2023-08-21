@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  *str_print - a func that print a string
  *@args: the arg given in the format
