@@ -1,56 +1,6 @@
 #include "main.h"
 
 /**
- * ptr_print - print the pointer value
- * @args: the types of the args
- * @buff: the buff arr
- * @flg: active flags
- * @wd: the wd
- * @per: Per
- * @s: the len of the sef
- * Return: nbr printed
- */
-int ptr_print(va_list args, char buff[],
-	int flg, int wd, int per, int s)
-{
-	char m_char = 0, pad = ' ';
-	int index = BUFFER_SIZE - 2, len = 2, pad_s = 1;
-	unsigned long n_ad;
-	char map_to[] = "0123456789abcdef";
-	void *addr = va_arg(args, void *);
-
-	CLEAR(wd);
-	CLEAR(s);
-
-	if (!addr)
-		return (write(1, "(nil)", 5));
-
-	buff[BUFFER_SIZE - 1] = '\0';
-	CLEAR(per);
-
-	n_ad = (unsigned long)addr;
-
-	while (n_ad > 0)
-	{
-		buff[index--] = map_to[n_ad % 16];
-		n_ad /= 16;
-		len++;
-	}
-
-	if ((flg & Z) && !(flg & F_M))
-		pad = '0';
-	if (flg & F_P)
-		m_char = '+', len++;
-	else if (flg & S)
-		m_char = ' ', len++;
-
-	index++;
-
-	return (ptr_printer(buff, index, len,
-		wd, flg, pad, m_char, pad_s));
-}
-
-/**
  * unprint - print the pointer value
  * @args: the types of the args
  * @buff: the buff arr
@@ -134,7 +84,7 @@ int rev_print(va_list args, char buff[],
 }
 
 /**
- * ptr_print - rotat a string 13
+ * rot_print - rotat a string 13
  * @args: the type of args
  * @buff: the buff arr
  * @flg: active flags
